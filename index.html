@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laporan Keuangan UMKM Desa</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h1><i class="fas fa-chart-line"></i> UMKM Desa Finance</h1>
+      <nav>
+        <a href="#">Beranda</a>
+        <a href="#">Laporan</a>
+        <a href="#">Grafik</a>
+        <a href="#">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="hero">
+    <div class="hero-content">
+      <h2>Selamat Datang di Aplikasi Keuangan UMKM Desa</h2>
+      <p>Membantu pelaku UMKM mencatat pemasukan dan pengeluaran, serta memantau laporan keuangan dengan grafik interaktif.</p>
+      <a href="#" class="btn">Cek Laporan</a>
+    </div>
+
+    <div class="chart-box">
+      <h3>Grafik Pemasukan</h3>
+      <canvas id="incomeChart" width="400" height="200"></canvas>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 UMKM Desa Finance. Dibuat untuk kemajuan ekonomi desa.</p>
+  </footer>
+
+  <script>
+    const ctx = document.getElementById('incomeChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun'],
+        datasets: [{
+          label: 'Pemasukan (juta Rp)',
+          data: [2.5, 3.1, 2.8, 4.2, 3.9, 5.1],
+          backgroundColor: '#48cae4',
+          borderColor: '#0077b6',
+          borderWidth: 1
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

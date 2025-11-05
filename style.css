@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: #eafaf9;
+  color: #155c56;
+}
+
+header {
+  background-color: #008080;
+  padding: 20px 0;
+  color: white;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h1 {
+  font-size: 1.8em;
+}
+
+.navbar nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar nav a:hover {
+  color: #b2dfdb;
+}
+
+.hero {
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to bottom right, #e0f7f5, #ffffff);
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 700px;
+  margin-bottom: 40px;
+}
+
+.hero-content h2 {
+  font-size: 2.2em;
+  color: #004d4d;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.1em;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background-color: #009688;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #00695c;
+}
+
+.chart-box {
+  width: 100%;
+  max-width: 700px;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.chart-box h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #008080;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #b2dfdb;
+  color: #004d4d;
+  font-size: 0.9rem;
+  margin-top: 30px;
+}
